@@ -1,16 +1,34 @@
-### Hi there 👋
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <style>
+    /* CSS for the navigation menu */
+    .navigation-menu {
+      display: none; /* Initially hide the navigation menu */
+    }
+    .show-menu .navigation-menu {
+      display: block; /* Display the navigation menu when the button is clicked */
+    }
+  </style>
+</head>
+<body>
+  <button id="navButton">ChatGPT</button>
+  <div class="navigation-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 
-<!--
-**elite-plus/elite-plus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <script>
+    // JavaScript to toggle the navigation menu
+    document.getElementById("navButton").addEventListener("click", function() {
+      document.body.classList.toggle("show-menu");
+    });
+  </script>
+</body>
+</html>
